@@ -1,4 +1,5 @@
 import express from "express"
-
-const app = express()
+import userRouter from "./routes/users"
+const app = express();
+app.use("/api", userRouter)
 export default app
